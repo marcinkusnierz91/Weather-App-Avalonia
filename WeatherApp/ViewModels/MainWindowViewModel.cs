@@ -2,5 +2,6 @@
 
 public class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting => "Elo mordo!";
+    public string Greeting => "Welcome to the ugliest weather app ever!!";
+    
 }

@@ -14,7 +14,41 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    
+    <Grid Background="{DynamicResource {x:Static Brushes.Transparent}}">
+        <Grid.Background>
+            <ImageBrush Source="../Assets/pexels-magda-ehlers-2114014.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        
+        <StackPanel>
+            <Grid >
+                <Grid Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+                    <Rectangle Grid.Column="0" Fill="Red" Width="40"/>
+                    <Rectangle Grid.Column="1" Fill="Pink" Width="40"/>
+                    <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Foreground="Red" Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Rectangle Grid.Column="3" Fill="Orange" Width="40"/>
+                    <Rectangle Grid.Column="4" Fill="Yellow" Width="40"/>
+                </Grid>
+            </Grid>
+        </StackPanel>
+        
+        <Grid Height="100" ColumnDefinitions="Auto,Auto,*,Auto,Auto,*">
+            
+            
+            <StackPanel Grid.Column="2" Background="white" Width="200" Height="300">
+                <Label> Dzisiejsza prognoza pogody</Label>
+            </StackPanel>
+               
+            <StackPanel Grid.Column="5" Background="white" Width="200" Height="300">
+                <Label> Tygodniowa prognoza pogody</Label>
+            </StackPanel>   
+            
+            
+        </Grid>
+        
+    </Grid>
+    
+   
 </Window>
