@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[0.10.18, )"
             },
+            "Avalonia.SVG.Skia": {
+              "target": "Package",
+              "version": "[0.10.18, )"
+            },
             "XamlNameReferenceGenerator": {
               "target": "Package",
               "version": "[1.6.1, )"

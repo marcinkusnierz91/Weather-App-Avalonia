@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Input;
+
 using WeatherApp.ViewModels;
 
 using WeatherApp.Models;
@@ -19,28 +20,29 @@ public partial class MainWindow : Window
     }
     
     private const string apiKey = "69d0f64763a71447797501363435451b";
-    private const string apiUrl = "https://api.openweathermap.org/data/2.5/weather";
+    private const string currentWeatherApiUrl = "https://api.openweathermap.org/data/2.5/weather";
+    // private const string weeklyForecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast";
 
     private readonly HttpClient httpClient = new HttpClient();
-
-    // ...
-
+    
     private async Task GetWeatherData(string city)
     {
         try
         {
-            var url = $"{apiUrl}?q={city}&appid={apiKey}";
-            var response = await httpClient.GetAsync(url);
-            response.EnsureSuccessStatusCode();
+            var currentWeatherUrl = $"{currentWeatherApiUrl}?q={city}&appid={apiKey}";
+            var currentWeatherResponse = await httpClient.GetAsync(currentWeatherUrl);
+            currentWeatherResponse.EnsureSuccessStatusCode();
 
-            var json = await response.Content.ReadAsStringAsync();
-            var weatherData = JsonSerializer.Deserialize<WeatherData>(json);
-
+            var currentWeatherJson = await currentWeatherResponse.Content.ReadAsStringAsync();
+            var currentWeatherData = JsonSerializer.Deserialize<WeatherData>(currentWeatherJson);
+            
+            float currentTemperatureCelsius = currentWeatherData.Main.Temp - 273.15f;
             var viewModel = (MainWindowViewModel)DataContext;
             
-            float temperatureCelsius = weatherData.Main.Temp - 273.15f;
-            viewModel.DisplayText = $"Temperature: {temperatureCelsius:F1}°C, Weather: {weatherData.Weather[0].Description}";
-            // viewModel.DisplayText = $"Temperature: {weatherData.Main.Temp}°C, Weather: {weatherData.Weather[0].Description}";
+            viewModel.Weather = $"Weather: {currentWeatherData.Weather[0].Description}";
+            viewModel.Temperature = $"Temperature: {currentTemperatureCelsius:F1}°C";
+            viewModel.WeatherConditionCode = currentWeatherData.Weather[0].Icon;
+            
         }
         catch (Exception ex)
         {
@@ -57,4 +59,6 @@ public partial class MainWindow : Window
             await GetWeatherData(textBox.Text);
         }
     }
+
+
 }

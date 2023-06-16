@@ -11,8 +11,11 @@ public class MainData
 
 public class WeatherInfo
 {
-    [JsonPropertyName("description")]
+    [JsonPropertyName("main")]
     public string Description { get; set; }
+
+    [JsonPropertyName("icon")]
+    public string Icon { get; set; }
 }
 
 public class WeatherData

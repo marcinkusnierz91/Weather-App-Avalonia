@@ -131,3 +131,11 @@
 /Users/admin/RiderProjects/WeatherApp/WeatherApp/obj/Debug/net7.0/WeatherApp.pdb
 /Users/admin/RiderProjects/WeatherApp/WeatherApp/obj/Debug/net7.0/WeatherApp.genruntimeconfig.cache
 /Users/admin/RiderProjects/WeatherApp/WeatherApp/obj/Debug/net7.0/ref/WeatherApp.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/Avalonia.Svg.Skia.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/ExCSS.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/Fizzler.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/ShimSkiaSharp.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/SkiaSharp.HarfBuzz.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/Svg.Custom.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/Svg.Model.dll
+/Users/admin/RiderProjects/WeatherApp/WeatherApp/bin/Debug/net7.0/Svg.Skia.dll
