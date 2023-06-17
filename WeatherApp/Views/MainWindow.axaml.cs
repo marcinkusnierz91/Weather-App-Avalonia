@@ -1,13 +1,21 @@
 using System;
+<<<<<<< HEAD
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+=======
+using System.Net.Http;
+using System.Text.Json;
+>>>>>>> origin/main
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Input;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 using WeatherApp.ViewModels;
 
 using WeatherApp.Models;
@@ -24,7 +32,11 @@ public partial class MainWindow : Window
     
     private const string apiKey = "69d0f64763a71447797501363435451b";
     private const string currentWeatherApiUrl = "https://api.openweathermap.org/data/2.5/weather";
+<<<<<<< HEAD
     private const string weeklyForecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast";
+=======
+    // private const string weeklyForecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast";
+>>>>>>> origin/main
 
     private readonly HttpClient httpClient = new HttpClient();
     
@@ -46,6 +58,7 @@ public partial class MainWindow : Window
             viewModel.Temperature = $"Temperature: {currentTemperatureCelsius:F1}°C";
             viewModel.WeatherConditionCode = currentWeatherData.Weather[0].Icon;
             
+<<<<<<< HEAD
             // Pobierz tygodniową prognozę pogody
             var weeklyForecastUrl = $"{weeklyForecastApiUrl}?q={city}&appid={apiKey}";
             var weeklyForecastResponse = await httpClient.GetAsync(weeklyForecastUrl);
@@ -90,6 +103,8 @@ public partial class MainWindow : Window
             viewModel.Weather4 = weatherData[3];
             viewModel.Weather5 = weatherData[4];
 
+=======
+>>>>>>> origin/main
         }
         catch (Exception ex)
         {

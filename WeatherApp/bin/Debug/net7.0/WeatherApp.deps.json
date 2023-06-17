@@ -12,7 +12,11 @@
           "Avalonia.Desktop": "0.10.18",
           "Avalonia.Diagnostics": "0.10.18",
           "Avalonia.ReactiveUI": "0.10.18",
+<<<<<<< HEAD
           "Newtonsoft.Json": "13.0.3",
+=======
+          "Avalonia.Svg.Skia": "0.10.18",
+>>>>>>> origin/main
           "XamlNameReferenceGenerator": "1.6.1"
         },
         "runtime": {
@@ -24,7 +28,11 @@
           "Avalonia.Remote.Protocol": "0.10.18",
           "JetBrains.Annotations": "10.3.0",
           "System.ComponentModel.Annotations": "4.5.0",
+<<<<<<< HEAD
           "System.Memory": "4.5.3",
+=======
+          "System.Memory": "4.5.4",
+>>>>>>> origin/main
           "System.Reactive": "5.0.0",
           "System.Runtime.CompilerServices.Unsafe": "4.6.0",
           "System.ValueTuple": "4.5.0"
@@ -234,6 +242,23 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "Avalonia.Svg.Skia/0.10.18": {
+        "dependencies": {
+          "Avalonia": "0.10.18",
+          "Avalonia.Skia": "0.10.18",
+          "SkiaSharp": "2.88.1-preview.108",
+          "Svg.Skia": "0.5.18"
+        },
+        "runtime": {
+          "lib/net6.0/Avalonia.Svg.Skia.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          }
+        }
+      },
+>>>>>>> origin/main
       "Avalonia.Win32/0.10.18": {
         "dependencies": {
           "Avalonia": "0.10.18",
@@ -272,6 +297,25 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "ExCSS/4.1.4": {
+        "runtime": {
+          "lib/net6.0/ExCSS.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.1.4.0"
+          }
+        }
+      },
+      "Fizzler/1.2.1": {
+        "runtime": {
+          "lib/netstandard2.0/Fizzler.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
+        }
+      },
+>>>>>>> origin/main
       "HarfBuzzSharp/2.8.2.1-preview.108": {
         "dependencies": {
           "HarfBuzzSharp.NativeAssets.Win32": "2.8.2.1-preview.108",
@@ -356,7 +400,11 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "2.9.6",
           "System.Collections.Immutable": "1.5.0",
+<<<<<<< HEAD
           "System.Memory": "4.5.3",
+=======
+          "System.Memory": "4.5.4",
+>>>>>>> origin/main
           "System.Reflection.Metadata": "1.6.0",
           "System.Runtime.CompilerServices.Unsafe": "4.6.0",
           "System.Text.Encoding.CodePages": "4.5.1",
@@ -610,6 +658,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -618,6 +667,8 @@
           }
         }
       },
+=======
+>>>>>>> origin/main
       "ReactiveUI/13.2.10": {
         "dependencies": {
           "DynamicData": "7.1.1",
@@ -632,6 +683,17 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "ShimSkiaSharp/0.5.18": {
+        "runtime": {
+          "lib/net6.0/ShimSkiaSharp.dll": {
+            "assemblyVersion": "0.5.18.0",
+            "fileVersion": "0.5.18.0"
+          }
+        }
+      },
+>>>>>>> origin/main
       "SkiaSharp/2.88.1-preview.108": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "2.88.1-preview.108",
@@ -644,6 +706,21 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "SkiaSharp.HarfBuzz/2.88.1-preview.108": {
+        "dependencies": {
+          "HarfBuzzSharp": "2.8.2.1-preview.108",
+          "SkiaSharp": "2.88.1-preview.108"
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.1.0"
+          }
+        }
+      },
+>>>>>>> origin/main
       "SkiaSharp.NativeAssets.Linux/2.88.1-preview.108": {
         "dependencies": {
           "SkiaSharp": "2.88.1-preview.108"
@@ -708,6 +785,50 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "Svg.Custom/0.5.18": {
+        "dependencies": {
+          "ExCSS": "4.1.4",
+          "Fizzler": "1.2.1",
+          "System.Memory": "4.5.4",
+          "System.ObjectModel": "4.3.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/net6.0/Svg.Custom.dll": {
+            "assemblyVersion": "0.5.18.0",
+            "fileVersion": "0.5.18.0"
+          }
+        }
+      },
+      "Svg.Model/0.5.18": {
+        "dependencies": {
+          "ShimSkiaSharp": "0.5.18",
+          "Svg.Custom": "0.5.18"
+        },
+        "runtime": {
+          "lib/net6.0/Svg.Model.dll": {
+            "assemblyVersion": "0.5.18.0",
+            "fileVersion": "0.5.18.0"
+          }
+        }
+      },
+      "Svg.Skia/0.5.18": {
+        "dependencies": {
+          "SkiaSharp": "2.88.1-preview.108",
+          "SkiaSharp.HarfBuzz": "2.88.1-preview.108",
+          "Svg.Custom": "0.5.18",
+          "Svg.Model": "0.5.18"
+        },
+        "runtime": {
+          "lib/net6.0/Svg.Skia.dll": {
+            "assemblyVersion": "0.5.18.0",
+            "fileVersion": "0.5.18.0"
+          }
+        }
+      },
+>>>>>>> origin/main
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -814,7 +935,11 @@
           "System.Threading": "4.3.0"
         }
       },
+<<<<<<< HEAD
       "System.Memory/4.5.3": {},
+=======
+      "System.Memory/4.5.4": {},
+>>>>>>> origin/main
       "System.Numerics.Vectors/4.5.0": {},
       "System.ObjectModel/4.3.0": {
         "dependencies": {
@@ -1046,6 +1171,16 @@
       "path": "avalonia.skia/0.10.18",
       "hashPath": "avalonia.skia.0.10.18.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "Avalonia.Svg.Skia/0.10.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h53wBk5UJQFfKBeGUdCRscObb28m82axaLfxnpHd+T67L5v1N4sJDAqbXlC6xjavfHKkW6J9w9QV4wGICv+zug==",
+      "path": "avalonia.svg.skia/0.10.18",
+      "hashPath": "avalonia.svg.skia.0.10.18.nupkg.sha512"
+    },
+>>>>>>> origin/main
     "Avalonia.Win32/0.10.18": {
       "type": "package",
       "serviceable": true,
@@ -1067,6 +1202,23 @@
       "path": "dynamicdata/7.1.1",
       "hashPath": "dynamicdata.7.1.1.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "ExCSS/4.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6eMFdIazPCVfr9Gios0nCUYq3/02SewnDGvS+aCi/RWaAtoETz2fNT+H//+k0vjoDJBHXkWdVG8EkxUydxtyxA==",
+      "path": "excss/4.1.4",
+      "hashPath": "excss.4.1.4.nupkg.sha512"
+    },
+    "Fizzler/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nSudK8LeKSu7T/N/6NVZNjUniMYagfzVo8yT2XwZ9BOVbWYQH3EQ8oviuztJ7AfO8PlRDsYIWboZuzIg94hhzQ==",
+      "path": "fizzler/1.2.1",
+      "hashPath": "fizzler.1.2.1.nupkg.sha512"
+    },
+>>>>>>> origin/main
     "HarfBuzzSharp/2.8.2.1-preview.108": {
       "type": "package",
       "serviceable": true,
@@ -1172,6 +1324,7 @@
       "path": "microsoft.win32.systemevents/4.5.0",
       "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1179,6 +1332,8 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
+=======
+>>>>>>> origin/main
     "ReactiveUI/13.2.10": {
       "type": "package",
       "serviceable": true,
@@ -1186,6 +1341,16 @@
       "path": "reactiveui/13.2.10",
       "hashPath": "reactiveui.13.2.10.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "ShimSkiaSharp/0.5.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FbpUe65+jkHHACyUm1Pi7m1lX1fQ0yyo3E0pyQF7ITAGnh/z5ZKRl2e56SHNZxdqpwFVt/MkJekJ4rScRYvXJg==",
+      "path": "shimskiasharp/0.5.18",
+      "hashPath": "shimskiasharp.0.5.18.nupkg.sha512"
+    },
+>>>>>>> origin/main
     "SkiaSharp/2.88.1-preview.108": {
       "type": "package",
       "serviceable": true,
@@ -1193,6 +1358,16 @@
       "path": "skiasharp/2.88.1-preview.108",
       "hashPath": "skiasharp.2.88.1-preview.108.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "SkiaSharp.HarfBuzz/2.88.1-preview.108": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/Fa+9g+XoJTVKjCxQnXzWA/H8Og0A6hajK+ISuhrEHwAqvK4jtH+1/AatCmiqjmMiJdISMk7b3HPER2LCxb4A==",
+      "path": "skiasharp.harfbuzz/2.88.1-preview.108",
+      "hashPath": "skiasharp.harfbuzz.2.88.1-preview.108.nupkg.sha512"
+    },
+>>>>>>> origin/main
     "SkiaSharp.NativeAssets.Linux/2.88.1-preview.108": {
       "type": "package",
       "serviceable": true,
@@ -1228,6 +1403,30 @@
       "path": "splat/10.0.1",
       "hashPath": "splat.10.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "Svg.Custom/0.5.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NJOTwyau7cXHmS4erwaoscvTzi34gd3BIXF8eYZuRjH1Bx2F0FVww7W2/9mM98ZFjatYtk2RuSiaaEM/Mv53sw==",
+      "path": "svg.custom/0.5.18",
+      "hashPath": "svg.custom.0.5.18.nupkg.sha512"
+    },
+    "Svg.Model/0.5.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zBuA3t3onN1dppNEsphc1PZfdwBaHizwtU7CFYYl3At5jufjWGACwuwG5//2ny3RbZzYoR8zqZszxkiz3Z/2lQ==",
+      "path": "svg.model/0.5.18",
+      "hashPath": "svg.model.0.5.18.nupkg.sha512"
+    },
+    "Svg.Skia/0.5.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rBj/M7CDjuw46YIR8pDRUcqRRXDTtVG4I/8ymI/12+ozcAfoVOMhTHdiTnxQvvXUnAPUsFsfq4xRRDuAu3/oHA==",
+      "path": "svg.skia/0.5.18",
+      "hashPath": "svg.skia.0.5.18.nupkg.sha512"
+    },
+>>>>>>> origin/main
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1298,12 +1497,21 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Memory/4.5.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+=======
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+>>>>>>> origin/main
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",

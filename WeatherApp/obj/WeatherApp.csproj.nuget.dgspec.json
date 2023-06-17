@@ -54,9 +54,15 @@
               "target": "Package",
               "version": "[0.10.18, )"
             },
+<<<<<<< HEAD
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+=======
+            "Avalonia.SVG.Skia": {
+              "target": "Package",
+              "version": "[0.10.18, )"
+>>>>>>> origin/main
             },
             "XamlNameReferenceGenerator": {
               "target": "Package",

@@ -1,5 +1,8 @@
 using System;
+<<<<<<< HEAD
 using System.Collections.Generic;
+=======
+>>>>>>> origin/main
 
 namespace WeatherApp.Models
 {
@@ -8,7 +11,10 @@ namespace WeatherApp.Models
         public DateTime Date { get; set; }
         public string Day { get; set; }
         public string Description { get; set; }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
     }
 }
     

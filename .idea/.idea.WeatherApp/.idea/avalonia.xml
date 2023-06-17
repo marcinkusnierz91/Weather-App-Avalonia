@@ -3,7 +3,10 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+<<<<<<< HEAD
         <entry key="WeatherApp/App.axaml" value="WeatherApp/WeatherApp.csproj" />
+=======
+>>>>>>> origin/main
         <entry key="WeatherApp/Views/MainWindow.axaml" value="WeatherApp/WeatherApp.csproj" />
       </map>
     </option>

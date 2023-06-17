@@ -15,7 +15,10 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
     private string weather;
     private string temperature;
     private string weatherConditionCode;
+<<<<<<< HEAD
     private List<DailyForecast> weeklyForecast;
+=======
+>>>>>>> origin/main
 
 
     public string Greeting
@@ -69,6 +72,7 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
             }
         }
     }
+<<<<<<< HEAD
 
     private string weather1;
     public string Weather1
@@ -138,6 +142,8 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
             }
         }
     }
+=======
+>>>>>>> origin/main
     
     public string Temperature
     {
@@ -165,6 +171,7 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
     
+<<<<<<< HEAD
     public List<DailyForecast> WeeklyForecast
     {
         get { return weeklyForecast; }
@@ -177,6 +184,8 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
             }
         }
     }
+=======
+>>>>>>> origin/main
 
     public event PropertyChangedEventHandler PropertyChanged;
 
