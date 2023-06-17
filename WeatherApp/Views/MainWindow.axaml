@@ -1,0 +1,71 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:WeatherApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WeatherApp.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="WeatherApp">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <Grid Background="{DynamicResource {x:Static Brushes.Transparent}}">
+        
+        <Grid.Background>
+            <ImageBrush Source="../Assets/pexels-magda-ehlers-2114014.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        
+        <StackPanel>
+            <Grid >
+                <Grid Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+                    <Rectangle Grid.Column="0" Fill="Red" Width="40"/>
+                    <Rectangle Grid.Column="1" Fill="Pink" Width="40"/>
+                    <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Foreground="Red" Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Rectangle Grid.Column="3" Fill="Orange" Width="40"/>
+                    <Rectangle Grid.Column="4" Fill="Yellow" Width="40"/>
+                </Grid>
+            </Grid>
+        </StackPanel>
+        
+        <Grid Height="100" ColumnDefinitions="Auto,Auto,*,Auto,Auto,*">
+            
+            
+            <StackPanel Grid.Column="2" Background="white" Width="300" Height="300">
+                <Label> Dzisiejsza prognoza pogody</Label>
+                <!-- <TextBlock Foreground="Red" Text="{Binding DisplayText}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->
+                <TextBlock Foreground="Red" Text="{Binding Temperature}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Foreground="Red" Text="{Binding Weather}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <!-- <TextBlock Foreground="Red" Text="{Binding WeatherConditionCode}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->
+            </StackPanel>
+            
+            <StackPanel Grid.Column="3" Background="white" Width="100" Height="100" >
+                <TextBox x:Name="TextBox" Text="{Binding EnteredText, Mode=TwoWay}" Width="100" KeyDown="HandleKeyDown" />
+
+            </StackPanel>
+               
+            <StackPanel Grid.Column="5" Background="white" Width="550" Height="300">
+                <Label> Prognoza na najbliszych 5 dni</Label>
+                    <TextBlock Foreground="Red" Text="{Binding Weather1}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Foreground="Red" Text="{Binding Weather2}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Foreground="Red" Text="{Binding Weather3}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Foreground="Red" Text="{Binding Weather4}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Foreground="Red" Text="{Binding Weather5}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            </StackPanel>
+            
+            
+        </Grid>
+        
+    </Grid>
+    
+   
+</Window>
